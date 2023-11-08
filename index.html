@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 50px;
+            height: 2500px;
+        }
+
+        .box {
+            border-radius: 10px;
+            border: solid 5px salmon;
+            background-color: lightsalmon;
+            height: 100px;
+            margin: 20px;
+            width: 500px;
+            
+        }
+
+        .due {
+            position: sticky;
+            background-color: lightgray;
+            width: 500px;
+            top: 10px;
+    
+        }
+
+        /*.uno {
+            z-index: 100;
+            background-color: salmon;
+        }
+        .due {
+            background-color: black;
+            z-index: 99;
+        }*/
+
+    </style>
+</head>
+<body>
+    <div class="box uno">ciao</div><!--con position static l elemento non si muove. con relatuv poi 
+    ci vai a mettere top ecc per spostarlo-->
+    <div class="box due">ciao</div>
+    <div class="box tre">ciao</div>
+    <!-- .absolut è rispetto al container
+         .fixed è rispetto al viewport
+         .sticky invece quando scrolli rimane fermo 
+         quindi molto comodo per fare i menu cosi ti rimangono sopra ecc
+    -->
+</body>
+</html>
